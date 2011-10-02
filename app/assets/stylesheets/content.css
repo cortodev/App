@@ -1,0 +1,7 @@
+#content {
+  width: 75%;
+  background: -moz-linear-gradient(90deg, #DDDDDD, #FFFFFF, #EEEEEE) no-repeat scroll 0 0 transparent;
+  margin: auto;
+  position: relative;
+  min-height: 300px;
+}

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nom: MyString
+  email: MyString
+  contenu: MyText
+  poste_id: 1
+  visible: false
+
+two:
+  nom: MyString
+  email: MyString
+  contenu: MyText
+  poste_id: 1
+  visible: false

@@ -1,0 +1,7 @@
+nav#sponsors {
+  float: right;
+  ul li {
+    line-height: 3em;
+  }
+}
+

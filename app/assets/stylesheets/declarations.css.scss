@@ -1,0 +1,11 @@
+
+$main-background-color: blue;
+$main-color: orange;
+
+@mixin nice-background {
+    background: -moz-linear-gradient(center bottom , $main-background-color 11%, darken($main-background-color, 30%) 56%) repeat scroll 0 0 #F0E8D8;  
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0.3, $main-background-color),color-stop(0.65, darken($main-background-color, 30%)));
+    -moz-box-shadow: 0 0 65px #9FAECC  inset, 0 0 20px #677DBF inset, 0 0 3px #485A82;  
+    -webkit-box-shadow: 0 0 65px #CDBE9F inset, 0 0 20px #BEAE8C inset, 0 0 3px #816F47;  
+    box-shadow: 0 0 65px #9FAECC  inset, 0 0 20px #677DBF inset, 0 0 3px #485A82;
+}

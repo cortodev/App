@@ -1,0 +1,49 @@
+<section id="users">
+  <% for pole in User::POLES %>
+    <section class="poles">
+      <h1><%=  pole.humanize %></h1>
+      <ul>
+        <% @users.each do |user| %>
+          <% if user.pole?(pole) %>
+            <li>
+              <figure tabindex=0>
+                <%= image_tag user.image_url(:indexable) %>
+                <figcaption><%= user.name %></figcaption>
+              </figure>
+            <%= user.description %>
+            </li>
+            <span></span>
+            <li>
+              <figure tabindex=0>
+                <%= image_tag user.image_url(:indexable) %>
+                <figcaption><%= user.name %></figcaption>
+              </figure>
+            <%= user.description %>
+            </li>
+            <span></span>
+            <li>
+              <figure tabindex=0>
+                <%= image_tag user.image_url(:indexable) %>
+                <figcaption><%= user.name %></figcaption>
+              </figure>
+            <%= user.description %>
+            </li>
+            <span></span>
+              <li>
+                <figure tabindex=0>
+                  <%= image_tag user.image_url(:indexable) %>
+                  <figcaption><%= user.name %></figcaption>
+                </figure>
+            <%= user.description %>
+              </li>
+            <span></span>
+            <%if current_user == user %>
+              <%= link_to "Editez mon profil", edit_user_registration_path %>
+            <%end%>
+      </ul>
+        <% end %>
+      <% end %>
+    </section>
+  <% end %>
+</section>
+

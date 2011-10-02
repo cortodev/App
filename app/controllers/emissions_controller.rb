@@ -1,0 +1,2 @@
+class EmissionsController < PostsController
+end

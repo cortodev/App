@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>D.O.A | </title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+      <div id="volet">
+        <%= render 'inscrits/form' %>
+        <a href="#volet" class="ouverture">S'inscrire à la newsletter !</a>
+        <a href="#" class="fermeture">Fermer !</a>
+      </div>
+
+      <div id="wrapper">
+        <%= params[:controller] %>
+      <nav id="menu">
+        <% if current_user %>
+          <p>Bienvenu,
+          <%= current_user.name %></p>
+          <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+        <% else %>
+          <%= link_to "Inscrivez-vous", new_user_registration_path %>
+          <%= link_to "Connctez-vous", new_user_session_path %>
+
+        <%end %>
+        <ul>
+          <li><%= link_to "Accueil", root_path %></li>
+          <li><%= link_to "Emissions", emissions_path %></li>
+          <li><%= link_to "Interviews", interviews_path %></li>
+          <li><%= link_to "DOA", poles_path %></li>
+        </ul>
+  <%= flash[:notice] if flash[:notice] %>
+      </nav>
+    
+      <nav id="sponsors">
+        <ul>
+          <li><%= link_to 'Pinedo.com', 'http://www.phinedo.com' %></li>
+          <li><%= link_to 'BRED', 'htpp://www.bred.fr' %></li>
+          <li><%= link_to 'Ticketnet.fr', 'http://www.tickenet.fr' %></li>
+        </ul>
+      </nav>
+    <section id="content">
+      <%= yield %>
+    </section>
+    </div>
+
+</body>
+</html>

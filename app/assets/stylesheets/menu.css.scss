@@ -1,0 +1,41 @@
+@import  "declarations";
+
+nav#menu {
+  width: 80%;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 8px #272E31;
+  height: 170px;
+  z-index: 100;
+  margin:  auto;
+  background: none white 0 0 repeat scroll;
+  ul {
+margin: 0 auto;
+  }
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+  
+  a {
+    height: 85px;  
+    width: 75px;  
+    text-align: center;  
+    background: white;  
+    padding: 5px 10px;  
+    margin: 0 20px;  
+    color: $main-color;  
+    text-decoration: none;  
+    line-height: 5.6em;  
+
+    @include nice-background;
+    -moz-transition: all 0.3s ease-out;  
+    -webkit-transition: all 0.3s ease-out;  
+    transition: all 0.3s ease-out;
+    &:hover, &:focus {
+-moz-box-shadow: 0 0 65px #9FAECC  inset, 0 0 20px #677DBF inset, 0 0 15px #8494B5;
+-moz-transform: scale(1.2);
+transform: scale(1.2);
+color: white;
+    }
+  }
+}
+}

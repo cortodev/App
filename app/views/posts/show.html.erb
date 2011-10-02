@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+  <article>
+    <h1><%= @post.titre %></h1>
+    <div id="audio">
+    </div>
+    <br />
+    <%= image_tag @post.image_url.to_s %>
+    <p><%= @post.contenu %></p>
+    <footer>
+      Article écrit par  <%= @post.user.name %><br />
+      et lu <%= @post.count %> fois<br />
+    </footer>
+  </article>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
