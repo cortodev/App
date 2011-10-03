@@ -29,7 +29,7 @@ gem 'rmagick', :require => 'RMagick'
 
 gem 'sass'
 
-gem 'heroku'
+gem 'capistrano'
 # Use unicorn as the web server
 # gem 'unicorn'
 
