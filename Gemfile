@@ -28,6 +28,8 @@ gem 'carrierwave'
 gem 'rmagick', :require => 'RMagick'
 
 gem 'sass'
+
+gem 'heroku'
 # Use unicorn as the web server
 # gem 'unicorn'
 
