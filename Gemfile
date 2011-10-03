@@ -5,6 +5,10 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+group :development, :test do
+  gem 'sqlite3-ruby'
+end
+
 gem 'sqlite3'
 
 gem 'json'
@@ -29,7 +33,8 @@ gem 'rmagick', :require => 'RMagick'
 
 gem 'sass'
 
-gem 'capistrano'
+gem 'heroku'
+# gem 'capistrano'
 # Use unicorn as the web server
 # gem 'unicorn'
 

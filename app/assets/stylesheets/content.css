@@ -1,6 +1,9 @@
 #content {
   width: 75%;
+  background: linear-gradient(90deg, #DDDDDD, #FFFFFF, #EEEEEE) no-repeat scroll 0 0 transparent;
   background: -moz-linear-gradient(90deg, #DDDDDD, #FFFFFF, #EEEEEE) no-repeat scroll 0 0 transparent;
+  background: -webkit-linear-gradient(90deg, #DDDDDD, #FFFFFF, #EEEEEE) no-repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear,left bottom,left top, color-stop(0.3, #DDDDDD), color-stop(0.3, #FFFFFF),color-stop(0.3,#EEEEEE%));
   margin: auto;
   position: relative;
   min-height: 300px;
